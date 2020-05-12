@@ -3,7 +3,6 @@ body{
     max-width:1200px;
     margin: auto;
     font-family:'roboto';
-    padding-right:34px;
     box-shadow: 0px 0px 20px grey;
 }
 header{
@@ -97,6 +96,7 @@ main{
 #droite{
     padding-left:43px;
     padding-top:13px;
+    padding-right:34px;
 }
 .titre{
     color:#FECA07;
@@ -129,10 +129,6 @@ main{
     font-size:11px;
     margin: 0 12px 0 0;
 }
-
-.description{
-    width:100%;
-}
 .description h3{
     font-size: 13px;
     font-weight: 600;
@@ -159,15 +155,9 @@ main{
 .fa-circle:before {
     content: "\f111";
     font-size: 5px;
-    margin-left: 5px;
+    margin-left: 6px;
 }
 @media screen and (max-width: 992px){
-    body{
-        min-width:calc(100% - 34px);
-    }
-    droite{
-        width:calc(100% - 43px);
-    }
     .contenu{
         display:block;
     } 
@@ -175,17 +165,11 @@ main{
         padding:0 0 20px 0;
     }
     .description{
-        width:calc(100% - 21px);
         padding-left:21px;
     }
     
 }
 @media screen and (max-width: 768px){
-    body{
-        min-width:100%;
-        padding:0;
-        margin:0;
-    }
     header{
         display:flex;
         flex-direction: column;
@@ -213,13 +197,13 @@ main{
         order:2;
         min-width:100%;
     }
-    
     #contact p{
         text-align: center;
     }
     #droite{
+        padding-left:15px;
+        padding-right:15px;
         order:1;
-        width:calc(100% - 86px);
     }
     .coordonnees{
         min-width:50%;
