@@ -1,0 +1,231 @@
+body{
+    color: #646464;
+    max-width:1200px;
+    margin: auto;
+    font-family:'roboto';
+    padding-right:34px;
+    box-shadow: 0px 0px 20px grey;
+}
+header{
+    display:flex;
+}
+#photo{
+    display:flex;
+    min-width:246px;
+    max-width:246px;
+    height: 211px;
+    background-color:#FECA07;
+}
+#photoprofil{
+    background-image: url(images/thomas_arbeit_mini.jpg);
+    margin:auto;
+    width:140px;
+    height:140px;
+    border-radius:50%;
+}
+#nom{
+    padding-left:43px;
+    width: 100%;
+}
+#nom h1{
+    font-size:40px;
+    margin: 65px 0 2px 0;
+    font-weight:400
+}
+span{
+    color: #FECA07;
+}
+#nom h2{
+    font-size: 17px;
+    margin: 1px 0 4px 0;
+}
+#underlinemini{
+    width:50px;
+    height:1px;
+    background-color: #FECA07; 
+}
+main{
+    display:flex;
+}
+#gauche{
+    display:flex;
+    flex-direction:column;
+    min-width:246px;
+    max-width:246px;
+    background-color:#FECA07;
+}
+#gauche h3{
+    background-color:#404040;
+    color:#FECA07;
+    text-align: center;
+    margin: 0 0 21px 0;
+    padding: 10px 0 10px 0;
+    font-size:20px;
+}
+#gauche p{
+    font-size:11px;
+    padding:5px 30px 5px 30px ;
+    margin:0;
+    text-align: justify;
+}
+#contact{
+    padding-bottom: 32px;
+    flex: 2;
+}
+#propos{
+    padding-bottom:32px;
+    flex:3;
+}
+#loisirs{
+    padding-bottom:25px;
+    flex:1;
+}
+#picto{
+    display:flex;
+    justify-content: space-around;
+}
+.cercle{
+    display:flex;
+    width:43px;
+    height:43px;
+    border: 1px solid #404040;
+    border-radius: 50%;
+    font-size:29px;
+    justify-content: center;
+    align-items: center;
+}
+#droite{
+    padding-left:43px;
+    padding-top:13px;
+}
+.titre{
+    color:#FECA07;
+    font-size: 28px;
+    display:flex;
+    align-items:flex-start;
+}
+.titre h2{
+    color: #646464;
+    font-size:18px;
+    margin: 0px 0 11px 17px;
+}
+.underline{
+    width:100%;
+    height:1px;
+    background-color: #FECA07;
+    margin-bottom:29px;
+}
+.contenu{
+    display:flex;
+    margin-bottom: 32px;
+}
+.date{
+    display:flex;
+    align-items: flex-start;
+    min-width:96px;
+    padding-right:60px;
+}
+.date p{
+    font-size:11px;
+    margin: 0 12px 0 0;
+}
+
+.description{
+    width:100%;
+}
+.description h3{
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 0 7px 0; 
+}
+.description p{
+    text-align: justify;
+    font-size:11px;
+    margin: 0 0 7px 0;
+    line-height:1.4;
+}
+#personnes{
+    display:flex;
+}
+.coordonnees{
+    min-width:50%;
+    padding-bottom:20px;
+}
+.coordonnees p{
+    font-size:11px; 
+    line-height:1.4;
+}
+
+.fa-circle:before {
+    content: "\f111";
+    font-size: 5px;
+    margin-left: 5px;
+}
+@media screen and (max-width: 992px){
+    body{
+        min-width:calc(100% - 34px);
+    }
+    droite{
+        width:calc(100% - 43px);
+    }
+    .contenu{
+        display:block;
+    } 
+    .date{
+        padding:0 0 20px 0;
+    }
+    .description{
+        width:calc(100% - 21px);
+        padding-left:21px;
+    }
+    
+}
+@media screen and (max-width: 768px){
+    body{
+        min-width:100%;
+        padding:0;
+        margin:0;
+    }
+    header{
+        display:flex;
+        flex-direction: column;
+    }
+    #photo{
+        min-width:100%;
+    }
+    #nom{
+        padding: 0 0 45px 0;
+    }
+    #nom h1{
+        text-align: center
+    }
+    #nom h2{
+        text-align: center;
+    }
+    #underlinemini{
+        margin: auto;
+    }
+    main{
+        display:flex;
+        flex-direction:column;
+    }
+    #gauche{
+        order:2;
+        min-width:100%;
+    }
+    
+    #contact p{
+        text-align: center;
+    }
+    #droite{
+        order:1;
+        width:calc(100% - 86px);
+    }
+    .coordonnees{
+        min-width:50%;
+        padding-bottom:30px;
+    }
+    .coordonnees p{
+        margin:0 30% 0 0;
+    }
+}
